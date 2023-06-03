@@ -6,7 +6,7 @@ from pyllm import llm
 def define(word):
     prompt = {
         "task": "define",
-        "features": ["etymology", "grammar", "description"],
+        "features": "etymology, grammar, description",
         "word": word,
     }
     return llm(str(prompt))
