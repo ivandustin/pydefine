@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "pydefine"
+version = "0.1.0"
+description = "Define (ancient) words using LLM"
+authors = ["Ivan Dustin Bilon <ivan22.dust@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pyllm = {git = "https://github.com/ivandustin/pyllm.git"}
+backoff = "^2.2.1"
+tqdm = "^4.65.0"
+openai = "^0.27.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+pydefine = "pydefine.__init__:main"
