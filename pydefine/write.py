@@ -1,7 +1,9 @@
 from tempfile import TemporaryDirectory
 from pathlib import Path
+from backoff import on_exception, expo
 
 
+@on_exception(expo, Exception)
 def write(filepath, content):
     with TemporaryDirectory() as tempdir:
         tempdir = Path(tempdir)
