@@ -1,3 +1,4 @@
+import json
 from backoff import on_exception, expo
 from pyllm import llm
 
@@ -9,4 +10,4 @@ def define(word):
         "features": ["etymology", "grammar", "description"],
         "word": word,
     }
-    return llm(str(prompt))
+    return llm(json.dumps(prompt))
