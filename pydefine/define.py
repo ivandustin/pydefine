@@ -8,6 +8,6 @@ def define(word):
     prompt = {
         "task": "define",
         "features": ["etymology", "grammar", "description"],
-        "word": word,
+        "word": word.lower(),
     }
     return llm(json.dumps(prompt))
