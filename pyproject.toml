@@ -8,9 +8,9 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.9"
-pyllm = {git = "https://github.com/ivandustin/pyllm.git"}
 backoff = "^2.2.1"
 tqdm = "^4.65.0"
+pyopenaichat = {git = "https://github.com/ivandustin/pyopenaichat.git"}
 
 
 [tool.poetry.group.dev.dependencies]
