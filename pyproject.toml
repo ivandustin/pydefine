@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pydefine"
-version = "0.1.0"
+version = "0.2.0"
 description = "Define (ancient) words using LLM"
 authors = ["Ivan Dustin Bilon <ivan22.dust@gmail.com>"]
 license = "MIT"
